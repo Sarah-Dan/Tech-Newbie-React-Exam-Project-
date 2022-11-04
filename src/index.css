@@ -1,3 +1,39 @@
+/* google fonts */
+
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Mono:wght@300&family=Oleo+Script&family=Raleway&family=Source+Code+Pro:wght@300;400&display=swap');
+/* ROOT STYLES */
+:root {
+  /* background and font colors */
+  --bg--color: #0e3357;
+  --light: white;
+  --dark: #000;
+  --grey: grey;
+  --title: rgb(226, 83, 83);
+  --author: rgb(235, 43, 43);
+  --logo: rgb(255, 119, 0);
+  --animation: rgba(243, 216, 61, 0.993);
+  --button: rgba(255, 119, 0, 0.779);
+  --button--hover: rgba(255, 119, 0, 0.993);
+  --search: transparent;
+
+  /* font styles */
+  --font-family: "Source Code Pro", monospace;
+  --font-family-title: "Noto Sans Mono", monospace;
+  --font-family-author: "Raleway", sans-serif;
+  --font-family-logo: "Oleo Script", cursive;
+
+  /* font sizes */
+  --font-smaller: 0.8rem;
+  --font-small: 1.2rem;
+  --font-medium: 1.5rem;
+  --font-large: 2rem;
+
+  /* font weight */
+  --font-weight-light: 300;
+  --font-weight-medium: 500;
+  --font-weight-bold: 700;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -5,7 +41,73 @@
 }
 
 body {
-  font-family: 'Roboto', sans-serif;
-  background-color: black;
-  color: white;
+  width: 100%;
+  height: 100vh;
+  background: transparent;
+  background-image: url("../src/assets/images/background.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  color: var(--light);
+  font-family: var(--font-family);
+  font-size: var(--font-small);
+  line-height: 1.75;
+  /* letter-spacing: 1px; */
+}
+
+/* MAIN CONTENT STYLES */
+.main {
+  /* width: 100%; */
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  text-align: center;
+}
+
+/* FOOTER STYLES */
+footer{
+  position: fixed;
+  width: 100%;
+  bottom: 0;
+  left: 0;
+  font-size: var(--font-smaller);
+  padding: 1rem 0;
+  text-align: center;
+}
+
+/* MEDIA QUERIES */
+@media (max-width: 375px) {
+  .users__list {
+    grid-template-rows: repeat(1, 1fr);
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  #nav__toggler {
+    display: flex;
+    flex-direction: columns;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .pagination {
+    width: 100%;
+    margin: 1rem auto;
+  }
+
+  .page__btn {
+    flex-direction: row;
+    width: 60%;
+    margin: 1rem auto;
+  }
+
+  .page__btn,
+  .array__btn {
+    width: 50%;
+    margin: 0.2rem auto;
+    padding: 0.5rem 1rem;
+  }
 }

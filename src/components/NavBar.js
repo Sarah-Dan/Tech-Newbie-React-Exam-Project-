@@ -1,31 +1,42 @@
 import { NavLink } from "react-router-dom";
+// import { useAuthContext } from "../userAuthContext";
 import "../assets/styles/navbar.css";
 
 // create a navbar component
-const NavBar = () => {
-    return ( 
-        <div className="navbar">
-            <div className="navbar__logo">
-                <h1>Tech newbie</h1>
-            </div>
-            <NavLink
+const NavBar = (props) => {
+  // get the userauthcontext and re-render any time it changes
+  // const auth = useAuthContext();
+
+  return (
+    <div className="navbar">
+      <div className="navbar__logo">
+        <h2>Tech newbie</h2>
+      </div>
+      {/* <Menu> */}
+      <div className="navbar__links">
+        <NavLink
           style={({ isActive }) =>
             isActive ? { color: "yellow" } : { color: "white" }
           }
           className="nav__link"
           to="/"
         >
-          Home
+          HOME
         </NavLink>
         <NavLink
-            style={({ isActive }) =>
+          style={({ isActive }) =>
             isActive ? { color: "yellow" } : { color: "white" }
-            }
-            className="nav__link"
-            to="/about"
+          }
+          className="nav__link"
+          to="/about"
         >
-            About
+          ABOUT
         </NavLink>
+        {/* {auth.user ? (
+          <div>
+
+          </div>  
+        } */}
         <NavLink
           style={({ isActive }) =>
             isActive ? { color: "yellow" } : { color: "white" }
@@ -33,7 +44,7 @@ const NavBar = () => {
           className="nav__link"
           to="/events"
         >
-            Events
+          EVENTS
         </NavLink>
         <NavLink
           style={({ isActive }) =>
@@ -42,11 +53,12 @@ const NavBar = () => {
           className="nav__link"
           to="/community"
         >
-          Community
+          COMMUNITY
         </NavLink>
-            </div>
+      </div>
+      {/* </Menu> */}
+    </div>
+  );
+};
 
-     );
-}
- 
 export default NavBar;

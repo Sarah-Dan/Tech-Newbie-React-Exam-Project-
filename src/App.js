@@ -1,5 +1,7 @@
 import { Routes, Route } from "react-router-dom";
 import { ErrorBoundary } from "react-error-boundary";
+// import { Link, useNavigate } from "react-router-dom";
+import { useAuth, ProvideAuth } from "./userAuthContext";
 import NavBar from "./components/NavBar";
 import Fallback from "./components/Fallback";
 import Footer from "./components/Footer";
@@ -12,6 +14,7 @@ import Page404 from "./pages/Page404";
 
 function App() {
   return (
+    <div className="main">
     <ErrorBoundary FallbackComponent={Fallback}>
         <NavBar />
         <Routes>
@@ -26,6 +29,7 @@ function App() {
         </Routes>
         <Footer />
       </ErrorBoundary>
+    </div>
   );
 }
 
