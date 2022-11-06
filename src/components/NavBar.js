@@ -10,7 +10,7 @@ const NavBar = (props) => {
   return (
     <div className="navbar">
       <div className="navbar__logo">
-        <h2>Tech newbie</h2>
+        <h1>TECH NEWBIE</h1>
       </div>
       {/* <Menu> */}
       <div className="navbar__links">

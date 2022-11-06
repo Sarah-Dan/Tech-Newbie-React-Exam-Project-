@@ -4,22 +4,22 @@
 /* ROOT STYLES */
 :root {
   /* background and font colors */
-  --bg--color: #0e3357;
+  --bg--light:rgba(15, 76, 116, 0.883);
   --light: white;
   --dark: #000;
   --grey: grey;
   --title: rgb(226, 83, 83);
   --author: rgb(235, 43, 43);
-  --logo: rgb(255, 119, 0);
+  --logo: rgb(26, 180, 232);
   --animation: rgba(243, 216, 61, 0.993);
   --button: rgba(255, 119, 0, 0.779);
-  --button--hover: rgba(255, 119, 0, 0.993);
+  --button--hover: rgba(225, 194, 39, 0.993);
   --search: transparent;
 
   /* font styles */
   --font-family: "Source Code Pro", monospace;
   --font-family-title: "Noto Sans Mono", monospace;
-  --font-family-author: "Raleway", sans-serif;
+  --font-family-text: "Raleway", sans-serif;
   --font-family-logo: "Oleo Script", cursive;
 
   /* font sizes */
@@ -38,6 +38,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  text-decoration: none;
 }
 
 body {
@@ -53,7 +54,7 @@ body {
   font-family: var(--font-family);
   font-size: var(--font-small);
   line-height: 1.75;
-  /* letter-spacing: 1px; */
+  overflow-x: hidden;
 }
 
 /* MAIN CONTENT STYLES */
@@ -80,34 +81,71 @@ footer{
 }
 
 /* MEDIA QUERIES */
-@media (max-width: 375px) {
-  .users__list {
-    grid-template-rows: repeat(1, 1fr);
+/* @media screen and (min-width: 768px) {
+  .event__list {
+    width: 100%;
+    gap: 3rem;
+    height: 100%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, 20rem);
+    justify-content: center;
+    align-items: center;
+    margin: 0 2rem;
+    text-align: center;
+  }
+} */
+
+/* MEDIA QUERIES */
+/* @media screen and (min-width: 768px) {
+  .main {
+    width: 90%;
+  }
+
+  .main__content {
+    width: 100%;
+    min-width: 400px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem;
+    margin: 2.5rem;
+  }
+}
+
+@media screen and (max-width: 360px) {
+  .main {
+    
+  }
+  .main {
+    columns: 1;
+    width: 100%;
+    max-width: 600px;
+    min-width: 500px;
+    display: flex;
+     flex-direction: row; 
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem;
+    margin: 0 2rem;
+  }
+
+  .event__list{
     grid-template-columns: repeat(1, 1fr);
   }
 
-  #nav__toggler {
-    display: flex;
-    flex-direction: columns;
-    align-items: center;
-    justify-content: center;
+  .event__card {
+    max-width: 300px;
   }
 
-  .pagination {
+  .home__content--box {
+    grid-template-columns: 1fr;
+    flex-direction: column;
     width: 100%;
-    margin: 1rem auto;
+    min-width: 400px;
+    margin: 2rem 5rem;
   }
+} */
 
-  .page__btn {
-    flex-direction: row;
-    width: 60%;
-    margin: 1rem auto;
-  }
 
-  .page__btn,
-  .array__btn {
-    width: 50%;
-    margin: 0.2rem auto;
-    padding: 0.5rem 1rem;
-  }
-}
+

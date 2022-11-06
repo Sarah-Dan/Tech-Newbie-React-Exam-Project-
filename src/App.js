@@ -1,17 +1,11 @@
 import { Routes, Route } from "react-router-dom";
 import { ErrorBoundary } from "react-error-boundary";
 // import { Link, useNavigate } from "react-router-dom";
-import { useAuth, ProvideAuth } from "./userAuthContext";
-import NavBar from "./components/NavBar";
-import Fallback from "./components/Fallback";
-import Footer from "./components/Footer";
-import Home from "./pages/Home";
-import About from "./pages/About";
-import Events from "./pages/Events";
-import Community from "./pages/Community";
-import SignUp from "./pages/SignUp";
-import Page404 from "./pages/Page404";
+// import { useAuth, ProvideAuth } from "./userAuthContext";
+import { NavBar, Footer, Fallback } from "./components";
+import { Home, About, Events, Community, SignUp, Page404 } from "./pages";
 
+// ROOT COMPONENT
 function App() {
   return (
     <div className="main">

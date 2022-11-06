@@ -8,11 +8,11 @@
     font-family: var(--font-family-title);
   }
   
-  .logo {
-    font-family: var(--font-family-logo);
-    font-size: var(--font-large);
+  .navbar__logo {
+    font-family: var(--font-family);
     font-weight: var(--font-weight-bold);
     color: var(--logo);
+    font-size: var(--font-smaller);
   }
   
   .nav__links {
