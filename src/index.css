@@ -77,14 +77,13 @@ h1 {
 
 /* FOOTER STYLES */
 footer {
-  position: fixed;
   width: 100%;
   bottom: 0;
   left: 0;
   font-size: var(--font-smaller);
-  padding-top: 2rem;
+  padding: 2rem;
   text-align: center;
-  margin-top: 5rem;
+  margin-top: 2rem;
 }
 
 /* MEDIA QUERIES */
