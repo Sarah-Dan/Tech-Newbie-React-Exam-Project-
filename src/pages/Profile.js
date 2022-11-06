@@ -9,11 +9,6 @@ const Profile = () => {
   const auth = useAuth();
   const navigate = useNavigate();
 
-  const handleSignOut = () => {
-    auth.signOut();
-    navigate("/");
-  };
-
   return (
     <div className="profile__content">
       <Helmet>
