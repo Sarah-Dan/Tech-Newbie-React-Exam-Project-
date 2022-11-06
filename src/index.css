@@ -1,11 +1,11 @@
 /* google fonts */
 
-@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Mono:wght@300&family=Oleo+Script&family=Raleway&family=Source+Code+Pro:wght@300;400&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+Mono:wght@300&family=Oleo+Script&family=Raleway&family=Source+Code+Pro:wght@300;400&display=swap");
 /* ROOT STYLES */
 :root {
   /* background and font colors */
-  --bg--light:rgba(15, 76, 116, 0.883);
-  --bg--dark:rgb(26, 132, 185);
+  --bg--light: rgba(15, 76, 116, 0.883);
+  --bg--dark: rgb(26, 132, 185);
   --light: white;
   --dark: #000;
   --grey: grey;
@@ -61,7 +61,6 @@ h1 {
   font-size: var(--font-medium);
   font-weight: var(--font-weight-bold);
   font-family: var(--font-family-title);
-  
 }
 
 /* MAIN CONTENT STYLES */
@@ -77,14 +76,15 @@ h1 {
 }
 
 /* FOOTER STYLES */
-footer{
+footer {
   position: fixed;
   width: 100%;
   bottom: 0;
   left: 0;
   font-size: var(--font-smaller);
-  padding: 1rem 0;
+  padding-top: 2rem;
   text-align: center;
+  margin-top: 5rem;
 }
 
 /* MEDIA QUERIES */
@@ -153,6 +153,3 @@ footer{
     margin: 2rem 5rem;
   }
 } */
-
-
-
