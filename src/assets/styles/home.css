@@ -8,47 +8,29 @@
 }
 
 .home__content {
-    width: 100%;
-    /* max-width: 400px; */
+  width: 100%;
+  /* max-width: 400px; */
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   padding: 2rem;
-  background-color: var(--bg--light);
   border-radius: 1rem;
   color: var(--light);
 }
 
-.home__content--text h1 {
+.home__content--greeting {
   font-size: var(--font-large);
   margin-bottom: 2rem;
 }
 
-.home__content--text {
-  font-size: var(--font-medium);
-  margin-top: 2rem;
+.home__content--text, span {
+  font-size: var(--font-large);
 }
 
 .home__content--paragraph {
   font-size: var(--font-medium);
   margin: 2rem 0;
   /* padding: 2rem; */
-}
-
-.home__content--image {
-  width: 100%;
-  padding: 0;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-}
-
-.home__content img {
-  background-color: transparent;
-  width: 100%;
-  max-height: 100%;
-  border: none;
-  margin-top: 1rem;
 }
 
 span::before {
@@ -72,7 +54,7 @@ span::before {
   }
 }
 
-.signin__btn {
+.join__btn {
   width: 100%;
   max-width: 150px;
   padding: 0.8rem;
@@ -82,8 +64,6 @@ span::before {
   border-radius: 5px;
   outline: none;
   text-decoration: none;
-  /* margin-right: 25rem; */
-  /* margin: 0.5rem 0; */
   font-size: var(--font-small);
   font-weight: var(--font-weight-bold);
   cursor: pointer;

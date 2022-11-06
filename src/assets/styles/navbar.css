@@ -12,7 +12,7 @@
     font-family: var(--font-family);
     font-weight: var(--font-weight-bold);
     color: var(--logo);
-    font-size: var(--font-smaller);
+    font-size: var(--font-medium);
   }
   
   .nav__links {

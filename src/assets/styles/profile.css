@@ -1,4 +1,15 @@
-/* EVENTS PAGE */
+/* PROFILE PAGE */
+.signout__btn {
+  background-color: var(--bg--light);
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  margin: 10px;
+}
+
 .event__container {
   width: 100%;
   display: flex;
@@ -11,7 +22,8 @@
 
 .event__list {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(10rem, 30rem));
+  grid-template-columns: repeat(2, 1fr);
+  /* grid-template-columns: repeat(auto-fit, minmax(10rem, 35rem)); */
   justify-content: center;
   grid-gap: 3rem;
   padding: 1rem;
@@ -28,8 +40,7 @@
   width: 100%;
   max-width: 600px;
   padding: 1.5rem;
-  margin: 2rem 0;
-  border-radius: 0.4rem;
+  border-radius: 0.5rem;
   box-shadow: #d9d9ea 0px 0px 10px 0px;
 }
 
