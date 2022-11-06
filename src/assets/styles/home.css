@@ -30,13 +30,11 @@
 .home__content--paragraph {
   font-size: var(--font-medium);
   margin: 2rem 0;
-  /* padding: 2rem; */
 }
 
 span::before {
   content: "Developer Advocate?";
   animation: animate infinite 3s;
-  /* padding-left: 10px; */
   color: var(--animation);
 }
 
@@ -68,4 +66,9 @@ span::before {
   font-weight: var(--font-weight-bold);
   cursor: pointer;
   transition: all 0.3s ease-in-out;
+}
+
+.join__btn:hover {
+  background: var(--light);
+  color: var(--dark);
 }

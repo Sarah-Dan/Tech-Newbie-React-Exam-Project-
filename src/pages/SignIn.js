@@ -8,8 +8,6 @@ import "../assets/styles/signin.css";
 const SignIn = () => {
   // create a state for the user
   const [user, setUser] = useState("");
-  // create a state for the password
-  const [password, setPassword] = useState("");
   // create custom hook for auth
   const auth = useAuth();
   // create custom hook for navigate

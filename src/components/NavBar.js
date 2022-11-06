@@ -1,11 +1,16 @@
-import { NavLink } from "react-router-dom";
+import { useNavigate, NavLink } from "react-router-dom";
 import { useAuth } from "../auth";
-// import { useAuthContext } from "../userAuthContext";
 import "../assets/styles/navbar.css";
 
 // create a navbar component
-const NavBar = (props) => {
+const NavBar = () => {
   const auth = useAuth();
+  const navigate = useNavigate();
+
+  const handleSignOut = () => {
+    auth.signOut();
+    navigate("/");
+  };
 
   return (
     <div className="navbar">
@@ -40,7 +45,7 @@ const NavBar = (props) => {
           PROFILE
         </NavLink>
         {auth.user ? (
-          <button className="signout__btn" onClick={() => auth.signOut()}>
+          <button className="signout__btn" onClick={handleSignOut}>
             SIGN OUT
           </button>
         ) : (
@@ -60,16 +65,4 @@ const NavBar = (props) => {
 };
 
 export default NavBar;
-// {
-//   !auth.user && (
-//     <NavLink
-//       style={({ isActive }) =>
-//         isActive ? { color: "yellow" } : { color: "white" }
-//       }
-//       className="nav__link"
-//       to="/signin"
-//     >
-//       SIGN IN
-//     </NavLink>
-//   )
-// }
+
