@@ -2,10 +2,7 @@ import { Link } from "react-router-dom";
 
 // create an event list component
 const EventLists = () => {
-  // const error = null;
-  // const loading = false;
-  // {loading && <p>Please wait....Loading...</p>}
-  // {error && <p>{error.message}</p>}
+  // create an array of events
   const myEvents = [
     {
       id: 1,

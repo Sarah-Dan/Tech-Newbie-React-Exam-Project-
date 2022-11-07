@@ -1,8 +1,16 @@
 import { Helmet } from "react-helmet-async";
+import { useNavigate } from "react-router-dom";
 import "../assets/styles/signup.css";
 
 // create a signup component
 const SignUp = () => {
+  // create a navigate function
+  const navigate = useNavigate();
+  //  create a function to handle form submission
+  const handleSignIn = () => {
+    // redirect to the sign in page
+    navigate("/signin");
+  };
   return (
     <div className="signup__container">
       <Helmet>
@@ -10,8 +18,9 @@ const SignUp = () => {
         <meta name="description" content="Sign up to join the community" />
         <link rel="canonical" href="/signup" />
       </Helmet>
-      <h3 className="signup__heading">Sign Up</h3>
-      <p>Sign up to get full access to the community.</p>
+      <h1 className="signup__heading">
+        Sign up to get full access to the community.
+      </h1>
       {/* create a form */}
       <form className="signup__form">
         <label htmlFor="full__name">Full Name</label>
@@ -20,23 +29,7 @@ const SignUp = () => {
           type="text"
           name="name"
           id="full__name"
-          placeholder="Enter your full name"
-        />
-        <label htmlFor="phone">Phone</label>
-        <input
-          className="signup__input"
-          type="number"
-          name="phone"
-          id="phone"
-          placeholder="Enter your phone number"
-        />
-        <label htmlFor="country">Country</label>
-        <input
-          className="signup__input"
-          type="text"
-          name="country"
-          id="country"
-          placeholder="Enter your country of residence"
+          placeholder="Enter your Full name"
         />
         <label htmlFor="email">Email</label>
         <input
@@ -46,15 +39,31 @@ const SignUp = () => {
           id="email"
           placeholder="Enter your email"
         />
+        <label htmlFor="full__name">Username</label>
+        <input
+          className="signup__input"
+          type="text"
+          name="user name"
+          id="full__name"
+          placeholder="Set your user name"
+        />
         <label htmlFor="password">Password</label>
         <input
           className="signup__input"
           type="password"
           name="password"
           id="password"
-          placeholder="Enter your password"
+          placeholder="Set your password"
         />
-        <button className="signup__btn" type="submit">
+        <label htmlFor="confirm__password">Confirm Password</label>
+        <input
+          className="signup__input"
+          type="password"
+          name="confirm__password"
+          id="confirm__password"
+          placeholder="Confirm your password"
+        />
+        <button className="signup__btn" onClick={handleSignIn}>
           Sign Up
         </button>
       </form>

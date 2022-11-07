@@ -9,21 +9,28 @@ import RequireUserAuth from "./components/RequireUserAuth";
 function App() {
   return (
     <div className="main">
-    <ErrorBoundary FallbackComponent={Fallback}>
-      <AuthProvider>
-        <NavBar />
-        <Routes>
-          <Route path="/" >
-            <Route index element={<Home />} />
-            <Route path=":id" element={<SignUp />} />
-          </Route>
-          <Route path="about" element={<About />} />
-          <Route path="/profile" element={<RequireUserAuth><Profile /></RequireUserAuth>} />
-          <Route path="/signin" element={<SignIn />} />
-          <Route path="*" element={<Page404 />} />
-        </Routes>
-        <Footer />
-      </AuthProvider>
+      <ErrorBoundary FallbackComponent={Fallback}>
+        <AuthProvider>
+          <NavBar />
+          <Routes>
+            <Route path="/">
+              <Route index element={<Home />} />
+              <Route path=":id" element={<SignUp />} />
+            </Route>
+            <Route path="about" element={<About />} />
+            <Route
+              path="/profile"
+              element={
+                <RequireUserAuth>
+                  <Profile />
+                </RequireUserAuth>
+              }
+            />
+            <Route path="/signin" element={<SignIn />} />
+            <Route path="*" element={<Page404 />} />
+          </Routes>
+          <Footer />
+        </AuthProvider>
       </ErrorBoundary>
     </div>
   );
