@@ -55,7 +55,7 @@
 .event__register {
   width: 100%;
   max-width: 150px;
-  border: 1px solid var(--light);
+  text-align: center;
   background-color: var(--light);
   color: var(--dark);
   font-weight: var(--font-weight-bold);
