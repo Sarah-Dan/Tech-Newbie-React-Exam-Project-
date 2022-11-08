@@ -73,7 +73,7 @@
   transition: width 0.5s;
 }
 
-.navbar__menu--item:active {
+.navbar__menu--item.active {
   color: var(--light);
   border: 1px solid var(--light);
 }
@@ -93,7 +93,12 @@
 }
 
 @media screen and (max-width: 960px) {
-  .navbar__menu {
+  .navbar__logo {
+    margin-left: 0;
+    padding-left: 0;
+  }
+
+   .navbar__menu {
     display: flex;
     flex-direction: column;
     width: 100%;
@@ -120,13 +125,12 @@
   }
 
   .navbar__icon {
-    display: block;
+    display: flex;
     position: absolute;
     top: 0;
     right: 0;
-    transform: translate(-100%, 60%);
+    transform: translate(-100%, 40%);
     font-size: 1.8rem;
     cursor: pointer;
-    background-color: transparent;
   }
 }

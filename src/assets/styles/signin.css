@@ -23,6 +23,7 @@
   padding: 1.2rem;
   margin: 1rem;
   font-family: var(--font-family-text);
+  font-size: var(--font-medium);
   letter-spacing: 1px;
 }
 
@@ -41,6 +42,8 @@
   border: 1px solid var(--light);
   border-radius: 5px;
   outline: none;
+  color: var(--light);
+  font-size: var(--font-medium);
 }
 
 .signin__button {
@@ -66,7 +69,7 @@
 /* MEDIA QUERIES */
 @media screen and (max-width: 768px) {
    .signin__form {
-    max-width: 300px;
+    max-width: 330px;
     padding: 2rem;
   }
 
@@ -78,7 +81,12 @@
   .signin__input {
     width: 100%;
     background-color: transparent;
-    flex-grow: 1;
+    padding: 1.5rem;
+  }
+
+  .signin__input::placeholder {
+    font-size: var(--font-small);
+    color: var(--grey);
   }
 
   .signin__button {
