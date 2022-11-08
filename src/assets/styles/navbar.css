@@ -49,11 +49,15 @@
   border-bottom: 3px solid transparent;
 }
 
+/* .nav__link:hover {
+  border-bottom: 3px solid var(--light);
+} */
+
 .navbar__menu--item {
   margin-right: 1rem;
 }
 
-/* .navbar__menu--item::after {
+.navbar__menu--item::after {
   content: "";
   display: block;
   text-align: center;
@@ -61,12 +65,17 @@
   height: 2px;
   background: transparent;
   transition: width 0.7s ease, background-color 0.7s ease;
-} */
+}
 
 .navbar__menu--item:hover::after {
   width: 100%;
   background: var(--light);
   transition: width 0.5s;
+}
+
+.navbar__menu--item:active {
+  color: var(--light);
+  border: 1px solid var(--light);
 }
 
 .navbar__icon {
@@ -91,7 +100,7 @@
     border-top: 1px solid var(--light);
     position: absolute;
     top: 80px;
-    left: -110px;
+    left: -110%;
     opacity: 1;
   }
 

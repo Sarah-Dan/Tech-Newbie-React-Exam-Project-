@@ -78,6 +78,7 @@
   .signin__input {
     width: 100%;
     background-color: transparent;
+    flex-grow: 1;
   }
 
   .signin__button {
