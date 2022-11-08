@@ -58,7 +58,7 @@
   display: block;
   text-align: center;
   width: 0;
-  /* height: 2px; */
+  height: 2px;
   background: transparent;
   transition: width 0.7s ease, background-color 0.7s ease;
 }

@@ -44,7 +44,7 @@ const SignUp = () => {
           className="signup__input"
           type="text"
           name="user name"
-          id="full__name"
+          id="user__name"
           placeholder="Set your user name"
         />
         <label htmlFor="password">Password</label>
