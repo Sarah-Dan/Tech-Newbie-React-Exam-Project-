@@ -9,7 +9,7 @@ const Home = () => {
       <Helmet>
         <title>Home</title>
         <meta name="description" content="Home page" />
-        <link rel="canonical" href="/" />
+        <link rel="canonical" href="/home" />
       </Helmet>
       <div className="home__content--box">
         <div className="home__content">

@@ -1,31 +1,112 @@
 /* NAVBAR STYLES */
 .navbar {
+  width: 100%;
+  height: 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1.5rem 2.5rem;
+  font-family: var(--font-family-title);
+  font-size: var(--font-medium);
+  position: sticky;
+  top: 0;
+  z-index: 20;
+}
+
+.navbar__container {
+  width: 100%;
+  height: 80px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1400px;
+}
+
+.navbar__logo {
+  font-family: var(--font-family);
+  font-weight: var(--font-weight-bold);
+  color: var(--logo);
+  font-size: var(--font-medium);
+  align-items: center;
+  text-align: left;
+  margin-left: 2rem;
+  cursor: pointer;
+}
+
+.navbar__menu {
+  display: flex;
+  text-align: center;
+  margin-right: 2rem;
+}
+
+.nav__link {
+  font-size: var(--font-small);
+  font-weight: var(--font-weight-bold);
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+  height: 100%;
+  transition: all 0.3s ease-in-out;
+  border-bottom: 3px solid transparent;
+}
+
+.navbar__menu--item {
+  margin-right: 1rem;
+}
+
+.navbar__menu--item::after {
+  content: "";
+  display: block;
+  width: 0;
+  height: 2px;
+  background: transparent;
+  transition: width 0.7s ease, background-color 0.7s ease;
+}
+
+.navbar__menu--item:hover::after {
+  width: 100%;
+  background: var(--light);
+  transition: width 0.5s;
+}
+
+.navbar__icon {
+  display: none;
+}
+
+@media screen and (max-width: 960px) {
+  .navbar__menu {
+    display: flex;
+    flex-direction: column;
     width: 100%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 1.5rem 2.5rem;
-    font-family: var(--font-family-title);
+    border-top: 1px solid var(--light);
+    position: absolute;
+    top: 80px;
+    left: -110px;
+    opacity: 1;
   }
-  
-  .navbar__logo {
-    font-family: var(--font-family);
-    font-weight: var(--font-weight-bold);
-    color: var(--logo);
-    font-size: var(--font-medium);
+
+  .navbar__menu.active {
+    background-color: var(--bg--dark);
+    color: var(--light);
+    left: 0px;
+    opacity: 1;
+    transition: all 0.5s ease;
+    z-index: 1;
   }
-  
-  .nav__links {
-    display: flex;
-    justify-content: space-between;
-  }
-  
+
   .nav__link {
-    align-items: center;
-    text-decoration: none;
-    font-size: var(--font-small);
-    font-weight: var(--font-weight-bold);
-    margin-right: 2rem;
-    transition: all 0.3s ease-in-out;
+    color: var(--light);
+    display: table;
+    padding: 1.5rem;
   }
-  
+
+  .navbar__icon {
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 0;
+    transform: translate(-100%, 60%);
+    font-size: 1.8rem;
+    cursor: pointer;
+    background-color: transparent;
+  }
+}

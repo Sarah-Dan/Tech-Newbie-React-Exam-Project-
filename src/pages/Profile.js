@@ -1,13 +1,11 @@
 import { Helmet } from "react-helmet-async";
 import { useAuth } from "../auth";
-import { useNavigate } from "react-router-dom";
 import EventLists from "../components/EventLists";
 import "../assets/styles/profile.css";
 
 // create a profile component
 const Profile = () => {
   const auth = useAuth();
-  const navigate = useNavigate();
 
   return (
     <div className="profile__content">
