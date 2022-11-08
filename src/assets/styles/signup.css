@@ -52,3 +52,37 @@
 .signup__btn:hover {
   background-color: var(--button--hover);
 }
+
+/* MEDIA QUERIES */
+@media screen and (max-width: 768px) {
+  .signup__container {
+    width: 100%;
+    max-width: 300px;
+    margin: 2rem;
+  }
+
+  .signup__form {
+    width: 100%;
+    padding: 0.8rem;
+    margin: 1rem auto;
+  }
+
+  .signup__input {
+    width: 100%;
+    border: 1px solid var(--light);
+    background-color: transparent;
+    margin-bottom: 1.5rem;
+  }
+
+  .signup__btn {
+    width: 100%;
+    max-width: 150px;
+    background-color: var(--light);
+    color: var(--dark);
+  }
+
+  .signup__btn:hover {
+    background-color: transparent;
+    color: var(--light);
+  }
+}

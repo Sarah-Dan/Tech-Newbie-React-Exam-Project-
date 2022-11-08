@@ -5,7 +5,7 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  margin: 0 2rem;
+  margin: 2rem;
   text-align: center;
 }
 
@@ -26,21 +26,18 @@
   letter-spacing: 1px;
 }
 
-.signin__details {
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  margin: 0.5rem 0;
-  padding: 1rem;
+.signin__heading {
+  font-size: var(--font-large);
+  font-weight: var(--font-weight-bold);
+  font-family: var(--font-family-title);
+  margin-bottom: 1rem;
 }
 
 .signin__input {
   width: 300px;
   max-width: 400px;
   padding: 0.8rem;
-  margin: 0.8rem 0;
+  margin: 1rem 0;
   border: 1px solid var(--light);
   border-radius: 5px;
   outline: none;
@@ -64,4 +61,28 @@
 .signin__button:hover {
   background-color: var(--bg--dark);
   color: var(--light);
+}
+
+/* MEDIA QUERIES */
+@media screen and (max-width: 768px) {
+   .signin__form {
+    max-width: 300px;
+    padding: 2rem;
+  }
+
+  .signin__heading {
+    font-size: var(--font-medium);
+    margin-bottom: 1rem;
+  }
+
+  .signin__input {
+    width: 100%;
+    background-color: transparent;
+  }
+
+  .signin__button {
+    margin: 1rem 0;
+    background-color: var(--light);
+    color: var(--bg--dark);
+  }
 }

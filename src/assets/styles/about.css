@@ -23,3 +23,12 @@
   letter-spacing: 1px;
 }
 
+/* MEDIA QUERIES */
+@media screen and (max-width: 460px) {
+  .about__paragraph {
+    padding: 1.5rem;
+    margin: 1rem;
+    line-height: 2;
+  }
+}
+

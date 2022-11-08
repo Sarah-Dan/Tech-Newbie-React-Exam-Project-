@@ -15,9 +15,9 @@ const Profile = () => {
         <link rel="canonical" href="/profile" />
       </Helmet>
       <div>
-        <h1>Welcome back! {auth.user}❤️</h1>
+        <h1 className="profile__greeting">Welcome back! {auth.user}❤️</h1>
       </div>
-      <div>
+      <div className="event__container">
         <p>
           Here are upcoming events to help you learn more about tech and connect
           with other members

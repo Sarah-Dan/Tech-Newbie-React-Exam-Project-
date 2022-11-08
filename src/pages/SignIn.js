@@ -22,16 +22,15 @@ const SignIn = () => {
     navigate(redirectPath, { replace: true });
   };
   return (
-    <div className="signin__form">
+    <div className="signin__container">
       <Helmet>
         <title>Sign In</title>
         <meta name="description" content="Sign In page" />
         <link rel="canonical" href="/signin" />
       </Helmet>
-      <h2>Sign in</h2>
-
-      <div className="signin__details">
-        <label htmlFor="user">
+      <div className="signin__form">
+      <h1 className="signin__heading">Sign in</h1>
+       <label htmlFor="user">
           Username
           <input
             className="signin__input"
@@ -55,7 +54,8 @@ const SignIn = () => {
         >
           Sign In
         </button>
-      </div>
+      
+    </div>
     </div>
   );
 };

@@ -24,18 +24,20 @@
     text-align: center;
   }
   
-  .page404__link {
+ /* MEDIA QUERIES */
+ @media screen and (max-width: 460px) {
+   .page404__content {
+     margin: 1rem;
+   }
+   .page404__title {
+     font-size: var(--font-medium);
+   }
+   .page404__image {
     width: 100%;
-    max-width: 200px;
-    margin: 1rem 0;
-    padding: 0.8rem 1.5rem;
-    text-align: center;
-    font-size: var(--font-smaller);
-    background-color: var(--button);
-    color: white;
-    text-decoration: none;
-    border-radius: 0.4rem;
-    border: none;
-    cursor: pointer;
-  }
+   }
+   .page404__message {
+     font-size: var(--font-small);
+     padding: 0 1rem;
+   }
+ }
   

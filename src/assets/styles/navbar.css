@@ -56,8 +56,9 @@
 .navbar__menu--item::after {
   content: "";
   display: block;
+  text-align: center;
   width: 0;
-  height: 2px;
+  /* height: 2px; */
   background: transparent;
   transition: width 0.7s ease, background-color 0.7s ease;
 }
@@ -70,6 +71,17 @@
 
 .navbar__icon {
   display: none;
+}
+
+.signout__btn {
+  background-color: var(--bg--light);
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  /* margin: 10px; */
 }
 
 @media screen and (max-width: 960px) {
