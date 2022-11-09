@@ -11,6 +11,7 @@
   position: sticky;
   top: 0;
   z-index: 20;
+  background-color: var(--bg--light);
 }
 
 .navbar__container {
@@ -48,10 +49,6 @@
   transition: width 0.5s ease, background-color 0.5s ease;
   border-bottom: 3px solid transparent;
 }
-
-/* .nav__link:hover {
-  border-bottom: 3px solid var(--light);
-} */
 
 .navbar__menu--item {
   margin-right: 1rem;
@@ -93,6 +90,9 @@
 }
 
 @media screen and (max-width: 960px) {
+  .navbar {
+    background-color: rgba(0, 0, 0, 0.644);
+  }
   .navbar__logo {
     margin-left: 0;
     padding-left: 0;

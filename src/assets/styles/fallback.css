@@ -1,22 +1,31 @@
 /* ERROR BOUNDARY STYLES */
 .fallback {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    flex-direction: column;
-    margin: 20% auto;
-    width: 100%;
-  }
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  flex-direction: column;
+  margin: 20% auto;
+  width: 100%;
+}
 
-  .error__message {
-    font-size: var(--font-medium);
-    font-weight: var(--font-weight-bold);
-    color: var(--error);
-    margin-bottom: 1rem;
-  }
+.error__message {
+  font-size: var(--font-medium);
+  font-weight: var(--font-weight-bold);
+  color: var(--error);
+  margin-bottom: 1rem;
+}
 
-  /* MEDIA QUERIES */
+.page404__link {
+  background-color: var(--dark);
+  color: var(--light);
+  font-size: var(--font-small);
+  font-weight: var(--font-weight-bold);
+  padding: 1rem 0.5rem;
+  margin: 1.2rem;
+}
+
+/* MEDIA QUERIES */
 @media screen and (max-width: 460px) {
   .fallback {
     margin: 10% auto;

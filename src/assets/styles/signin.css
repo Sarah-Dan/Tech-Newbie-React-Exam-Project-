@@ -40,7 +40,6 @@
   padding: 0.8rem;
   margin: 1rem 0;
   border: 1px solid var(--light);
-  border-radius: 5px;
   outline: none;
   color: var(--dark);
   font-size: var(--font-small);
@@ -74,7 +73,7 @@
   }
 
   .signin__heading {
-    font-size: var(--font-medium);
+    font-size: var(--font-large);
     margin-bottom: 1rem;
   }
 

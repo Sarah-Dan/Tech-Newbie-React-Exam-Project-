@@ -30,7 +30,7 @@
 .signup__input {
   width: 100%;
   padding: 1rem;
-  margin: 0.5rem 0;
+  margin: 1rem 0;
   border: 1px solid var(--dark);
   border-radius: 0.5rem;
   outline: none;
@@ -39,20 +39,20 @@
 .signup__btn {
   width: 100%;
   max-width: 150px;
-  background-color: var(--button);
+  background-color: transparent;
   color: var(--light);
   font-size: var(--font-small);
   font-weight: var(--font-weight-bold);
-  padding: 1rem;
-  margin-top: 1.2rem;
-  border: none;
+  padding: 1rem 0.5rem;
+  margin: 1.2rem;
+  border: 1px solid var(--light);
   border-radius: 0.3rem;
   cursor: pointer;
 }
 
 .signup__btn:hover {
-  background-color: var(--bg--light);
-  color: var(--light);
+  background-color: var(--light);
+  color: var(--dark);
 }
 
 /* MEDIA QUERIES */

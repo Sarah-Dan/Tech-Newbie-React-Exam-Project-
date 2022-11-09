@@ -72,7 +72,7 @@
 
 /* MEDIA QUERIES */
 @media screen and (max-width: 768px) {
-  .profile__greeting{
+  .profile__greeting {
     font-size: var(--font-small);
     margin: 1rem;
   }
@@ -81,7 +81,9 @@
   }
 
   .event__card {
-    max-width: 400px;
+    max-width: 500px;
+    font-size: 0.9rem;
+    padding: 1rem;
   }
 
   .event__register {
