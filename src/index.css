@@ -13,7 +13,7 @@
   --animation: rgba(243, 216, 61, 0.993);
   --button: rgba(255, 119, 0, 0.779);
   --button--hover: rgba(225, 194, 39, 0.993);
-  --search: transparent;
+  --error: rgb(237, 101, 22);
 
   /* font styles */
   --font-family: "Source Code Pro", monospace;

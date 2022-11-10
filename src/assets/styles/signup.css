@@ -16,6 +16,10 @@
   max-width: 400px;
 }
 
+.signup__heading{
+  color: var(--animation);
+}
+
 .signup__form {
   display: flex;
   flex-direction: column;
@@ -24,16 +28,28 @@
   width: 100%;
   padding: 1rem;
   margin: 0 auto;
-  font-size: var(--font-medium);
+  font-size: var(--font-small);
 }
 
 .signup__input {
   width: 100%;
   padding: 1rem;
-  margin: 1rem 0;
+  margin-bottom: 1rem;
   border: 1px solid var(--dark);
   border-radius: 0.5rem;
   outline: none;
+}
+
+.signup__input:focus {
+  border: 1px solid var(--primary);
+}
+
+.error {
+  color: var(--error);
+  font-size: 0.9rem;
+  font-weight: var(--font-weight-bold);
+  text-align: left;
+  padding: 0;
 }
 
 .signup__btn {
