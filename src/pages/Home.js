@@ -1,8 +1,10 @@
-import "../assets/styles/home.css";
-import { Link, Outlet } from "react-router-dom";
-import Community from "../components/Community";
 import { Helmet } from "react-helmet-async";
+import Community from "../components/Community";
+import Contact from "../components/Contact";
+import { Link, Outlet } from "react-router-dom";
+import "../assets/styles/home.css";
 
+// create a home component
 const Home = () => {
   return (
     <div className="home">
@@ -29,6 +31,9 @@ const Home = () => {
         <div>
           <Community />
         </div>
+      </div>
+      <div className="home__contact">
+        <Contact />
       </div>
       <Outlet />
     </div>

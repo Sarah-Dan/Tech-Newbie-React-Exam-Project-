@@ -11,19 +11,18 @@
 
 .signin__form {
   width: 100%;
-  max-width: 400px;
-  max-height: 70vh;
+  max-width: 350px;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  background-color: var(--bg--light);
-  box-shadow: 0 0 10px rgba(197, 207, 208, 0.865);
+  background-color: transparent;
+  box-shadow: 0 0 10px rgba(37, 126, 198, 0.865);
   border-radius: 1rem;
-  padding: 1.2rem;
+  padding: 1.5rem 2.2rem;
   margin: 1rem;
   font-family: var(--font-family-text);
-  font-size: var(--font-medium);
+  font-size: var(--font-small);
   letter-spacing: 1px;
 }
 
@@ -35,25 +34,34 @@
 }
 
 .signin__input {
-  width: 300px;
-  max-width: 400px;
-  padding: 0.8rem;
-  margin: 1rem 0;
-  border: 1px solid var(--light);
+  width: 100%;
+  padding: 0.8rem 0;
+  margin-bottom: 2rem;
+  background-color: transparent;
+  color: white;
+  border: none;
+  border-bottom: 1px solid var(--light);
   outline: none;
-  color: var(--dark);
   font-size: var(--font-small);
+}
+
+.signin__input:focus {
+  border-bottom: 1px solid var(--bg--light);
+}
+
+.signin__input::placeholder {
+  font-size: var(--font-small);
+  color: var(--grey);
 }
 
 .signin__button {
   width: 100%;
-  max-width: 150px;
   margin: 1rem 0;
   padding: 0.8rem;
-  background: transparent;
-  color: var(--light);
+  background-color: var(--light);
+  color: var(--dark);
   border: 1px solid var(--light);
-  border-radius: 5px;
+  border-radius: 0.4rem;
   outline: none;
   cursor: pointer;
   font-weight: var(--font-weight-bold);
@@ -61,8 +69,8 @@
 }
 
 .signin__button:hover {
-  background-color: var(--bg--dark);
-  color: var(--light);
+  background-color: var(--light);
+  color: var(--dark);
 }
 
 /* MEDIA QUERIES */

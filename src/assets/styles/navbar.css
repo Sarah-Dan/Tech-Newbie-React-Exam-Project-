@@ -5,7 +5,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 1.5rem 2.5rem;
+  padding: 2.5rem 0;
   font-family: var(--font-family-title);
   font-size: var(--font-medium);
   position: sticky;
@@ -92,6 +92,7 @@
 @media screen and (max-width: 960px) {
   .navbar {
     background-color: rgba(0, 0, 0, 0.644);
+    padding: 0.5rem 1rem;
   }
   .navbar__logo {
     margin-left: 0;
@@ -132,5 +133,7 @@
     transform: translate(-100%, 40%);
     font-size: 1.8rem;
     cursor: pointer;
+    padding: 0;
+    margin-left: 8rem;
   }
 }
