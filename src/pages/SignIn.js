@@ -30,23 +30,25 @@ const SignIn = () => {
       </Helmet>
       <div className="signin__form">
       <h1 className="signin__heading">Sign in</h1>
-       <label htmlFor="user">
+       {/* <label htmlFor="user">
           Username
+          </label> */}
           <input
             className="signin__input"
             type="text"
             onChange={(e) => setUser(e.target.value)}
             placeholder="Enter your username"
           />
-        </label>
-        <label htmlFor="password">
+        
+        {/* <label htmlFor="password">
           Password
+          </label> */}
           <input
             className="signin__input"
             type="password"
             placeholder="Enter your password"
           />
-        </label>
+        
         <button
           className="signin__button"
           disabled={!user}

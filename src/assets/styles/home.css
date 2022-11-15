@@ -101,9 +101,13 @@ span::before {
 }
 
 @media screen and (max-width: 390px) {
+  .home__content--box {
+    margin: 1rem;
+  }
   .home__content{
     background-color: var(--bg--light);
-    padding: 1.2rem 0;
+    padding: 1.2rem;
+    margin-top: 1rem;
     border-radius: 0.4rem;
   }
 
